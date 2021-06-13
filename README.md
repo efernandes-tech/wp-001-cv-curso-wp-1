@@ -26,3 +26,12 @@
     - WP Super Cache
     - Contact Form by WPForms – Drag & Drop Form Builder for WordPress (ativar)
     - WPS Hide Login (ativar)
+
+- Ferramentas para escolher a paleta de cores:
+
+    - https://color.adobe.com/create/color-wheel
+    - https://coolors.co/C05746-4CB944-F47521-A57F60-EACF6E
+
+- Ferramentas para escolher as fonts (busque fontes novas e não use as mesmas):
+
+    https://fonts.google.com/
