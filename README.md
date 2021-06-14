@@ -34,4 +34,12 @@
 
 - Ferramentas para escolher as fonts (busque fontes novas e não use as mesmas):
 
-    https://fonts.google.com/
+    - https://fonts.google.com/
+
+- Ferramentas para escolher as imagens (sempre trate as imagens e cuidado com a licença):
+
+    - https://stock.adobe.com/br (pago)
+    - https://www.shutterstock.com/pt/ (pago)
+    - https://www.pexels.com/pt-br/ (gratis)
+    - https://pixabay.com/pt/ (gratis)
+    - https://unsplash.com/ (gratis)
