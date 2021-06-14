@@ -55,3 +55,8 @@
         - Criar página "Contato"
     - Criar o menu "principal" (aparência / menus)
     - Adicionar páginas na ordem desejada
+- Topo e rodapé
+    - Personalizar a página Home
+        - Inserir a logo no cabeçalho
+        - Adicionar o botao de contato no canto
+        - Remover barra lateral
