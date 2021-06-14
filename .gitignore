@@ -24,6 +24,8 @@ node_modules/
 *.sql
 *.sqlite
 
+!db/wp001cv.sql
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
