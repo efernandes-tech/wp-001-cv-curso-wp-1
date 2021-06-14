@@ -60,3 +60,7 @@
         - Inserir a logo no cabeçalho
         - Adicionar o botao de contato no canto
         - Remover barra lateral
+        - Configurar o rodape
+        - Configurar container
+        - Configurar cores e fundos
+        - Configurar tipografia
