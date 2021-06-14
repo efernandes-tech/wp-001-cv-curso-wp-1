@@ -1,6 +1,6 @@
 # wp-001-cv-curso-wp-1
 
-## Notes:
+## Preparação do Ambiente:
 
 - Melhores temas (remover o q ñ está usando):
 
@@ -43,3 +43,15 @@
     - https://www.pexels.com/pt-br/ (gratis)
     - https://pixabay.com/pt/ (gratis)
     - https://unsplash.com/ (gratis)
+
+## Mão na Massa:
+
+- Configuração do menu
+    - Criar paginas
+        - Criar nova pagina "Home"
+        - Criar página "Cardápio"
+        - Criar página "Quem somos"
+        - Criar página "Notícias"
+        - Criar página "Contato"
+    - Criar o menu "principal" (aparência / menus)
+    - Adicionar páginas na ordem desejada
