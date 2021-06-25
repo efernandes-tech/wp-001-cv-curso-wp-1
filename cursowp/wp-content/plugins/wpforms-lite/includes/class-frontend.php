@@ -65,32 +65,32 @@ class WPForms_Frontend {
 	 */
 	public function __construct() {
 
-		$this->forms = array();
+		$this->forms = [];
 
 		// Filters.
-		add_filter( 'amp_skip_post', array( $this, 'amp_skip_post' ) );
+		add_filter( 'amp_skip_post', [ $this, 'amp_skip_post' ] );
 
 		// Actions.
-		add_action( 'wpforms_frontend_output_success', array( $this, 'confirmation' ), 10, 3 );
-		add_action( 'wpforms_frontend_output', array( $this, 'head' ), 5, 5 );
-		add_action( 'wpforms_frontend_output', array( $this, 'fields' ), 10, 5 );
-		add_action( 'wpforms_display_field_before', array( $this, 'field_container_open' ), 5, 2 );
-		add_action( 'wpforms_display_field_before', array( $this, 'field_label' ), 15, 2 );
-		add_action( 'wpforms_display_field_before', array( $this, 'field_description' ), 20, 2 );
-		add_action( 'wpforms_display_field_after', array( $this, 'field_error' ), 3, 2 );
-		add_action( 'wpforms_display_field_after', array( $this, 'field_description' ), 5, 2 );
-		add_action( 'wpforms_display_field_after', array( $this, 'field_container_close' ), 15, 2 );
-		add_action( 'wpforms_frontend_output', array( $this, 'recaptcha' ), 20, 5 );
-		add_action( 'wpforms_frontend_output', array( $this, 'foot' ), 25, 5 );
-		add_action( 'wp_enqueue_scripts', array( $this, 'assets_header' ) );
-		add_action( 'wp_enqueue_scripts', array( $this, 'recaptcha_noconflict' ), 9999 );
-		add_action( 'wp_head', array( $this, 'missing_assets_error_js' ) );
-		add_action( 'wp_footer', array( $this, 'assets_footer' ), 15 );
-		add_action( 'wp_footer', array( $this, 'recaptcha_noconflict' ), 19 );
-		add_action( 'wp_footer', array( $this, 'footer_end' ), 99 );
+		add_action( 'wpforms_frontend_output_success', [ $this, 'confirmation' ], 10, 3 );
+		add_action( 'wpforms_frontend_output', [ $this, 'head' ], 5, 5 );
+		add_action( 'wpforms_frontend_output', [ $this, 'fields' ], 10, 5 );
+		add_action( 'wpforms_display_field_before', [ $this, 'field_container_open' ], 5, 2 );
+		add_action( 'wpforms_display_field_before', [ $this, 'field_label' ], 15, 2 );
+		add_action( 'wpforms_display_field_before', [ $this, 'field_description' ], 20, 2 );
+		add_action( 'wpforms_display_field_after', [ $this, 'field_error' ], 3, 2 );
+		add_action( 'wpforms_display_field_after', [ $this, 'field_description' ], 5, 2 );
+		add_action( 'wpforms_display_field_after', [ $this, 'field_container_close' ], 15, 2 );
+		add_action( 'wpforms_frontend_output', [ $this, 'recaptcha' ], 20, 5 );
+		add_action( 'wpforms_frontend_output', [ $this, 'foot' ], 25, 5 );
+		add_action( 'wp_enqueue_scripts', [ $this, 'assets_header' ] );
+		add_action( 'wp_enqueue_scripts', [ $this, 'recaptcha_noconflict' ], 9999 );
+		add_action( 'wp_footer', [ $this, 'missing_assets_error_js' ] );
+		add_action( 'wp_footer', [ $this, 'assets_footer' ], 15 );
+		add_action( 'wp_footer', [ $this, 'recaptcha_noconflict' ], 19 );
+		add_action( 'wp_footer', [ $this, 'footer_end' ], 99 );
 
 		// Register shortcode.
-		add_shortcode( 'wpforms', array( $this, 'shortcode' ) );
+		add_shortcode( 'wpforms', [ $this, 'shortcode' ] );
 	}
 
 	/**
@@ -1671,7 +1671,15 @@ class WPForms_Frontend {
 		 */
 		$skip = (bool) apply_filters( 'wpforms_frontend_missing_assets_error_js_disable', false );
 
-		if ( ! wpforms_current_user_can() || wpforms_is_amp() || $skip ) {
+		if ( $skip || ! wpforms_current_user_can() ) {
+			return;
+		}
+
+		if ( empty( $this->forms ) && ! $this->assets_global() ) {
+			return;
+		}
+
+		if ( wpforms_is_amp() ) {
 			return;
 		}
 

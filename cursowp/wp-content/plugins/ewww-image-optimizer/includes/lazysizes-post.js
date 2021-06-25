@@ -78,7 +78,7 @@ function constrainSrc(url,objectWidth,objectHeight,objectType){
 			}
 			if('bg-cover'===objectType || 'img-crop'===objectType){
 				console.log('for ' + objectType);
-				return url + '?resize=' + objectWidth + ',' + objectHeight;
+				return url + '&resize=' + objectWidth + ',' + objectHeight;
 			}
 			if(objectHeight>objectWidth){
 				console.log('fallback height>width, using h param');
@@ -158,7 +158,7 @@ document.addEventListener('lazybeforeunveil', function(e){
 				}
 				if (!shouldAutoScale(target)||!shouldAutoScale(target.parentNode)){
 					var newSrc = false;
-				} else if ( window.lazySizes.hC(target,'et_pb_jt_filterable_grid_item_image') || window.lazySizes.hC(target,'ss-foreground-image') ) {
+				} else if ( window.lazySizes.hC(target,'et_pb_jt_filterable_grid_item_image') || window.lazySizes.hC(target,'ss-foreground-image') || window.lazySizes.hC(target,'img-crop') ) {
 					console.log('img that needs a hard crop');
 					var newSrc = constrainSrc(src,targetWidth,targetHeight,'img-crop');
 				} else {

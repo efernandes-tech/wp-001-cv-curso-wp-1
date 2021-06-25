@@ -101,6 +101,17 @@ Microthemer has built-in documentation! Just click the Help option (top right of
 
 == Changelog ==
 
+= 6.3.7.3 (June 18th, 2021) =
+
+# Bugs fixed
+* The previous update generated a JS error (Cannot read property 'split' of undefined) when creating a new selector in a folder that had the maximum number of selectors in it (40).
+
+= 6.3.7.2 (June 14th, 2021) =
+
+# Bugs fixed
+* Using entirely non alpha-numeric characters (e.g. Arabic, Chinese) for folder and selector names caused an error.
+* The code editor did not recognise aspect-ratio, padding/margin-block/inline properties, and was not correctly coloring the 'unset' keyword.
+
 = 6.3.7.0 (June 7th, 2021) =
 
 # Bugs fixed

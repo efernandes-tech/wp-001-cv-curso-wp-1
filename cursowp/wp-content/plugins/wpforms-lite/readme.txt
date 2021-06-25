@@ -3,7 +3,7 @@ Contributors: wpforms, jaredatch, smub, slaFFik
 Tags: contact form, contact form plugin, forms, form builder, custom form, contact button, contact me, custom contact form, form manager, form, forms builder, forms creator, captcha, recaptcha, Akismet, email form, web form, feedback form, payment form, survey form, donation form, email submit form, message form, mailchimp, mailchimp form, aweber, aweber form, paypal, paypal form, stripe, stripe form, getresponse, getresponse form, email subscription, contact form widget, user registration form, wordpress registration, wordpress login form, feedback
 Requires at least: 4.9
 Tested up to: 5.7
-Stable tag: 1.6.7
+Stable tag: 1.6.7.1
 Requires PHP: 5.5
 License: GNU General Public License v2.0 or later
 
@@ -417,6 +417,15 @@ Thank you
 Syed Balkhi
 
 == Changelog ==
+
+= 1.6.7.1 =
+- Changed: Improved logic of pasting a text in the fields with word and character limits.
+- Changed: Updated DOMPurify lib to 2.2.9.
+- Changed: Some admin notices can be dismissed on a per-user basis.
+- Fixed: Smart Tags don't parse dot and comma symbols well.
+- Fixed: In rare cases, WPForms functions calls are not handled correctly inside the third-party frontend AJAX calls.
+- Fixed: Incorrect `wpforms_smart_tag_process` filter deprecation notice.
+- Fixed: Compatibility with the Elementor 3.1.x, 3.2.x and 3.3.x.
 
 = 1.6.7 =
 - Changed: Email Summaries can now be tweaked via the hook to have multiple "To" recipients.

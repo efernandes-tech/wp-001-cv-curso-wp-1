@@ -97,54 +97,59 @@ function wpforms_new_form() {
 
 	// Check for form name.
 	if ( empty( $_POST['title'] ) ) {
-		die( esc_html__( 'No form name provided', 'wpforms-lite' ) );
+		die( esc_html__( 'No form name provided.', 'wpforms-lite' ) );
+	}
+
+	if ( ! isset( $_POST['template'] ) ) {
+		$_POST['template'] = '';
 	}
 
 	// Create form.
-	$form_title    = sanitize_text_field( $_POST['title'] );
-	$form_template = sanitize_text_field( $_POST['template'] );
+	$form_title    = sanitize_text_field( wp_unslash( $_POST['title'] ) );
+	$form_template = sanitize_text_field( wp_unslash( $_POST['template'] ) );
 	$title_exists  = get_page_by_title( $form_title, 'OBJECT', 'wpforms' );
 	$form_id       = wpforms()->form->add(
 		$form_title,
-		array(),
-		array(
+		[],
+		[
 			'template' => $form_template,
-		)
+		]
 	);
-	if ( null !== $title_exists ) {
+
+	if ( $title_exists !== null ) {
 		wp_update_post(
-			array(
+			[
 				'ID'         => $form_id,
 				'post_title' => $form_title . ' (ID #' . $form_id . ')',
-			)
+			]
 		);
 	}
 
 	if ( ! $form_id ) {
-		die( esc_html__( 'Error creating form', 'wpforms-lite' ) );
+		die( esc_html__( 'Error creating form.', 'wpforms-lite' ) );
 	}
 
 	if ( wpforms_current_user_can( 'edit_form_single', $form_id ) ) {
 		wp_send_json_success(
-			array(
+			[
 				'id'       => $form_id,
 				'redirect' => add_query_arg(
-					array(
+					[
 						'view'    => 'fields',
 						'form_id' => $form_id,
 						'newform' => '1',
-					),
+					],
 					admin_url( 'admin.php?page=wpforms-builder' )
 				),
-			)
+			]
 		);
 	}
 
 	if ( wpforms_current_user_can( 'view_forms' ) ) {
-		wp_send_json_success( array( 'redirect' => admin_url( 'admin.php?page=wpforms-overview' ) ) );
+		wp_send_json_success( [ 'redirect' => admin_url( 'admin.php?page=wpforms-overview' ) ] );
 	}
 
-	wp_send_json_success( array( 'redirect' => admin_url() ) );
+	wp_send_json_success( [ 'redirect' => admin_url() ] );
 }
 
 add_action( 'wp_ajax_wpforms_new_form', 'wpforms_new_form' );

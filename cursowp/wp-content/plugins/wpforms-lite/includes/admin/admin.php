@@ -379,7 +379,7 @@ function wpforms_check_php_version() {
 	}
 
 	// Display the notice, finally.
-	WPForms_Admin_Notice::error(
+	\WPForms\Admin\Notice::error(
 		'<p>' .
 		sprintf(
 			wp_kses(

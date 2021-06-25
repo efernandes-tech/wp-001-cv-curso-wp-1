@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPForms Lite 1.6.7\n"
+"Project-Id-Version: WPForms Lite 1.6.7.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpforms-lite\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-05-13T12:24:00+03:00\n"
+"POT-Creation-Date: 2021-06-15T13:46:05+03:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.4.0\n"
+"X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: wpforms-lite\n"
 
 #. Plugin Name of the plugin
@@ -69,7 +69,7 @@ msgid "Install Addon"
 msgstr ""
 
 #: includes/admin/admin.php:132
-#: includes/admin/ajax-actions.php:516
+#: includes/admin/ajax-actions.php:521
 msgid "Could not install addon. Please download from wpforms.com and install manually."
 msgstr ""
 
@@ -304,32 +304,32 @@ msgid "Something went wrong while saving the form."
 msgstr ""
 
 #: includes/admin/ajax-actions.php:100
-msgid "No form name provided"
+msgid "No form name provided."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:124
-msgid "Error creating form"
+#: includes/admin/ajax-actions.php:129
+msgid "Error creating form."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:164
+#: includes/admin/ajax-actions.php:169
 msgid "No form ID provided"
 msgstr ""
 
-#: includes/admin/ajax-actions.php:194
+#: includes/admin/ajax-actions.php:199
 msgid "Error updating form template"
 msgstr ""
 
-#: includes/admin/ajax-actions.php:302
+#: includes/admin/ajax-actions.php:307
 #: includes/fields/class-base.php:983
 msgid "post type"
 msgstr ""
 
-#: includes/admin/ajax-actions.php:333
+#: includes/admin/ajax-actions.php:338
 #: includes/fields/class-base.php:990
 msgid "taxonomy"
 msgstr ""
 
-#: includes/admin/ajax-actions.php:360
+#: includes/admin/ajax-actions.php:365
 #: includes/emails/class-emails.php:565
 #: includes/emails/class-emails.php:610
 #: includes/fields/class-base.php:1550
@@ -337,74 +337,74 @@ msgstr ""
 msgid "(empty)"
 msgstr ""
 
-#: includes/admin/ajax-actions.php:393
+#: includes/admin/ajax-actions.php:398
 msgid "You do not have permission to perform this operation."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:403
+#: includes/admin/ajax-actions.php:408
 msgid "Success! Your server can make SSL connections."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:410
+#: includes/admin/ajax-actions.php:415
 msgid "There was an error and the connection failed. Please contact your web host with the technical details below."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:430
+#: includes/admin/ajax-actions.php:435
 msgid "Plugin deactivation is disabled for you on this site."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:446
+#: includes/admin/ajax-actions.php:451
 msgid "Plugin deactivated."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:448
+#: includes/admin/ajax-actions.php:453
 msgid "Addon deactivated."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:452
+#: includes/admin/ajax-actions.php:457
 msgid "Could not deactivate the addon. Please deactivate from the Plugins page."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:469
+#: includes/admin/ajax-actions.php:474
 msgid "Plugin activation is disabled for you on this site."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:486
+#: includes/admin/ajax-actions.php:491
 msgid "Plugin activated."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:488
+#: includes/admin/ajax-actions.php:493
 msgid "Addon activated."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:493
+#: includes/admin/ajax-actions.php:498
 msgid "Could not activate addon. Please activate from the Plugins page."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:508
+#: includes/admin/ajax-actions.php:513
 msgid "There was an error while performing your request."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:516
+#: includes/admin/ajax-actions.php:521
 msgid "Could not install plugin. Please download and install manually."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:586
+#: includes/admin/ajax-actions.php:591
 msgid "Plugin installed."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:586
+#: includes/admin/ajax-actions.php:591
 msgid "Addon installed."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:596
+#: includes/admin/ajax-actions.php:601
 #: src/Lite/Admin/Connect.php:182
 #: src/Lite/Admin/Connect.php:195
 #: src/Lite/Admin/Connect.php:255
 msgid "Plugin installed & activated."
 msgstr ""
 
-#: includes/admin/ajax-actions.php:596
+#: includes/admin/ajax-actions.php:601
 msgid "Addon installed & activated."
 msgstr ""
 
@@ -894,7 +894,7 @@ msgstr ""
 
 #: includes/admin/builder/panels/class-fields.php:159
 #: includes/admin/builder/panels/class-settings.php:115
-#: includes/class-form.php:277
+#: includes/class-form.php:318
 #: includes/templates/class-contact.php:71
 #: src/Admin/Tools/Importers/ContactForm7.php:124
 #: src/Admin/Tools/Importers/NinjaForms.php:129
@@ -934,7 +934,7 @@ msgid "Unfortunately, the %s field is not available and will be ignored on the f
 msgstr ""
 
 #: includes/admin/builder/panels/class-fields.php:404
-#: lite/templates/admin/addons.php:49
+#: lite/templates/admin/addons.php:40
 msgid "Learn more"
 msgstr ""
 
@@ -1062,7 +1062,7 @@ msgstr ""
 #: includes/admin/builder/panels/class-settings.php:86
 #: includes/admin/builder/panels/class-setup.php:52
 #: src/Integrations/Elementor/Widget.php:222
-#: src/SmartTags/SmartTags.php:109
+#: src/SmartTags/SmartTags.php:112
 msgid "Form Name"
 msgstr ""
 
@@ -1913,36 +1913,36 @@ msgstr ""
 msgid "Go to WPForms Lite vs Pro comparison page"
 msgstr ""
 
-#: includes/admin/class-review.php:92
+#: includes/admin/class-review.php:103
 msgid "Hey, I noticed you collected over 50 entries from WPForms - that’s awesome! Could you please do me a BIG favor and give it a 5-star rating on WordPress to help us spread the word and boost our motivation?"
 msgstr ""
 
-#: includes/admin/class-review.php:93
-#: includes/admin/class-review.php:157
+#: includes/admin/class-review.php:104
+#: includes/admin/class-review.php:167
 msgid "~ Syed Balkhi<br>Co-Founder of WPForms"
 msgstr ""
 
-#: includes/admin/class-review.php:95
-#: includes/admin/class-review.php:159
+#: includes/admin/class-review.php:106
+#: includes/admin/class-review.php:169
 msgid "Ok, you deserve it"
 msgstr ""
 
-#: includes/admin/class-review.php:96
-#: includes/admin/class-review.php:160
+#: includes/admin/class-review.php:107
+#: includes/admin/class-review.php:170
 msgid "Nope, maybe later"
 msgstr ""
 
-#: includes/admin/class-review.php:97
-#: includes/admin/class-review.php:161
+#: includes/admin/class-review.php:108
+#: includes/admin/class-review.php:171
 msgid "I already did"
 msgstr ""
 
-#: includes/admin/class-review.php:156
+#: includes/admin/class-review.php:166
 msgid "Hey, I noticed you created a contact form with WPForms - that’s awesome! Could you please do me a BIG favor and give it a 5-star rating on WordPress to help us spread the word and boost our motivation?"
 msgstr ""
 
 #. translators: $1$s - WPForms plugin name; $2$s - WP.org review link; $3$s - WP.org review link.
-#: includes/admin/class-review.php:214
+#: includes/admin/class-review.php:224
 msgid "Please rate %1$s <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href=\"%3$s\" target=\"_blank\" rel=\"noopener\">WordPress.org</a> to help us spread the word. Thank you from the WPForms team!"
 msgstr ""
 
@@ -2395,9 +2395,9 @@ msgid "per year"
 msgstr ""
 
 #: includes/admin/class-welcome.php:286
-#: lite/templates/admin/addons.php:26
-#: lite/templates/admin/addons.php:59
+#: lite/templates/admin/addons.php:50
 #: src/Admin/Tools/Views/Importer.php:363
+#: src/Lite/Admin/Pages/Addons.php:101
 msgid "Upgrade Now"
 msgstr ""
 
@@ -2537,7 +2537,7 @@ msgid "Paste license key here"
 msgstr ""
 
 #: includes/admin/settings-api.php:143
-#: includes/providers/class-constant-contact.php:507
+#: includes/providers/class-constant-contact.php:512
 msgid "Connect"
 msgstr ""
 
@@ -2623,7 +2623,7 @@ msgctxt "Conditional Logic: new rule logic."
 msgid "or"
 msgstr ""
 
-#: includes/class-form.php:278
+#: includes/class-form.php:319
 #: includes/templates/class-blank.php:30
 #: includes/templates/class-contact.php:72
 #: includes/templates/class-subscribe.php:48
@@ -2632,7 +2632,7 @@ msgid "Sending..."
 msgstr ""
 
 #. translators: %s - form name.
-#: includes/class-form.php:283
+#: includes/class-form.php:324
 #: lite/wpforms-lite.php:143
 #: src/Admin/Tools/Importers/ContactForm7.php:133
 #: src/Admin/Tools/Importers/ContactForm7.php:448
@@ -2642,7 +2642,7 @@ msgstr ""
 msgid "New Entry: %s"
 msgstr ""
 
-#: includes/class-form.php:293
+#: includes/class-form.php:334
 #: includes/class-process.php:541
 #: includes/templates/class-contact.php:66
 #: lite/wpforms-lite.php:270
@@ -2689,11 +2689,11 @@ msgid "Google reCAPTCHA verification failed, please try again later."
 msgstr ""
 
 #. translators: %s - URL to the troubleshooting guide.
-#: includes/class-frontend.php:1737
+#: includes/class-frontend.php:1745
 msgid "Heads up! WPForms has detected an issue with JavaScript on this page. JavaScript is required for this form to work properly, so this form may not work as expected. See our <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">troubleshooting guide</a> to learn more or contact support."
 msgstr ""
 
-#: includes/class-frontend.php:1750
+#: includes/class-frontend.php:1758
 msgid "This message is only displayed to site administrators."
 msgstr ""
 
@@ -4759,7 +4759,7 @@ msgstr ""
 
 #: includes/providers/class-base.php:742
 #: includes/providers/class-base.php:1303
-#: includes/providers/class-constant-contact.php:486
+#: includes/providers/class-constant-contact.php:491
 #: src/Providers/Provider/Settings/FormBuilder.php:433
 #: src/Providers/Provider/Settings/PageIntegrations.php:153
 msgid "Add New Account"
@@ -4851,202 +4851,202 @@ msgstr ""
 msgid "Please fill out all of the fields below to add your new provider account."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:109
+#: includes/providers/class-constant-contact.php:114
 msgid "Constant Contact Subscription stopped by conditional logic"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:127
-#: includes/providers/class-constant-contact.php:305
-#: includes/providers/class-constant-contact.php:390
+#: includes/providers/class-constant-contact.php:132
+#: includes/providers/class-constant-contact.php:310
+#: includes/providers/class-constant-contact.php:395
 msgid "Constant Contact API Error"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:397
+#: includes/providers/class-constant-contact.php:402
 msgid "API list error: Constant API error"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:489
+#: includes/providers/class-constant-contact.php:494
 msgid "Please fill out all of the fields below to register your new Constant Contact account."
-msgstr ""
-
-#: includes/providers/class-constant-contact.php:491
-#: includes/providers/class-constant-contact.php:592
-msgid "Click here for documentation on connecting WPForms with Constant Contact."
 msgstr ""
 
 #: includes/providers/class-constant-contact.php:496
 #: includes/providers/class-constant-contact.php:597
+msgid "Click here for documentation on connecting WPForms with Constant Contact."
+msgstr ""
+
+#: includes/providers/class-constant-contact.php:501
+#: includes/providers/class-constant-contact.php:602
 msgid "Because Constant Contact requires external authentication, you will need to register WPForms with Constant Contact before you can proceed."
-msgstr ""
-
-#: includes/providers/class-constant-contact.php:500
-#: includes/providers/class-constant-contact.php:601
-msgid "Click here to register with Constant Contact"
-msgstr ""
-
-#: includes/providers/class-constant-contact.php:503
-#: includes/providers/class-constant-contact.php:604
-msgid "Authorization Code"
 msgstr ""
 
 #: includes/providers/class-constant-contact.php:505
 #: includes/providers/class-constant-contact.php:606
+msgid "Click here to register with Constant Contact"
+msgstr ""
+
+#: includes/providers/class-constant-contact.php:508
+#: includes/providers/class-constant-contact.php:609
+msgid "Authorization Code"
+msgstr ""
+
+#: includes/providers/class-constant-contact.php:510
+#: includes/providers/class-constant-contact.php:611
 msgid "Account Nickname"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:547
+#: includes/providers/class-constant-contact.php:552
 msgid "Get the most out of <strong>WPForms</strong> &mdash; use it with an active Constant Contact account."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:556
-#: includes/providers/class-constant-contact.php:663
+#: includes/providers/class-constant-contact.php:561
+#: includes/providers/class-constant-contact.php:670
 msgid "Try Constant Contact for Free"
 msgstr ""
 
 #. translators: %s - WPForms Constant Contact internal URL.
-#: includes/providers/class-constant-contact.php:562
+#: includes/providers/class-constant-contact.php:567
 msgid "Learn More about the <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">power of email marketing</a>"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:654
+#: includes/providers/class-constant-contact.php:661
 msgid "Get the most out of the <strong>WPForms</strong> plugin &mdash; use it with an active Constant Contact account."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:666
+#: includes/providers/class-constant-contact.php:673
 msgid "Connect your existing account"
 msgstr ""
 
 #. translators: %s - WPForms Constant Contact internal URL.
-#: includes/providers/class-constant-contact.php:672
+#: includes/providers/class-constant-contact.php:678
 msgid "Learn More about the <a href=\"%s\">power of email marketing</a>"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:744
+#: includes/providers/class-constant-contact.php:761
 msgid "Grow Your Website with WPForms + Email Marketing"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:745
+#: includes/providers/class-constant-contact.php:762
 msgid "Wondering if email marketing is really worth your time?"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:746
+#: includes/providers/class-constant-contact.php:763
 msgid "Email is hands-down the most effective way to nurture leads and turn them into customers, with a return on investment (ROI) of <strong>$44 back for every $1 spent</strong> according to DMA."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:747
+#: includes/providers/class-constant-contact.php:764
 msgid "Here are 3 big reasons why every smart business in the world has an email list:"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:752
+#: includes/providers/class-constant-contact.php:769
 msgid "<strong>Email is still #1</strong> - At least 91% of consumers check their email on a daily basis. You get direct access to your subscribers, without having to play by social media&#39;s rules and algorithms."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:753
+#: includes/providers/class-constant-contact.php:770
 msgid "<strong>You own your email list</strong> - Unlike with social media, your list is your property and no one can revoke your access to it."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:754
+#: includes/providers/class-constant-contact.php:771
 msgid "<strong>Email converts</strong> - People who buy products marketed through email spend 138% more than those who don&#39;t receive email offers."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:756
+#: includes/providers/class-constant-contact.php:773
 msgid "That&#39;s why it&#39;s crucial to start collecting email addresses and building your list as soon as possible."
 msgstr ""
 
 #. translators: %s - WPBeginners.com Guide to Email Lists URL.
-#: includes/providers/class-constant-contact.php:762
+#: includes/providers/class-constant-contact.php:779
 msgid "For more details, see this guide on <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">why building your email list is so important</a>."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:776
+#: includes/providers/class-constant-contact.php:793
 msgid "You&#39;ve Already Started - Here&#39;s the Next Step (It&#39;s Easy)"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:777
+#: includes/providers/class-constant-contact.php:794
 msgid "Here are the 3 things you need to build an email list:"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:779
+#: includes/providers/class-constant-contact.php:796
 msgid "A Website or Blog"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:780
+#: includes/providers/class-constant-contact.php:797
 msgid "High-Converting Form Builder"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:781
+#: includes/providers/class-constant-contact.php:798
 msgid "The Best Email Marketing Service"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:783
+#: includes/providers/class-constant-contact.php:800
 msgid "With a powerful email marketing service like Constant Contact, you can instantly send out mass notifications and beautifully designed newsletters to engage your subscribers."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:786
+#: includes/providers/class-constant-contact.php:803
 msgid "Get Started with Constant Contact for Free"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:789
+#: includes/providers/class-constant-contact.php:806
 msgid "WPForms plugin makes it fast and easy to capture all kinds of visitor information right from your WordPress site - even if you don&#39;t have a Constant Contact account."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:790
+#: includes/providers/class-constant-contact.php:807
 msgid "But when you combine WPForms with Constant Contact, you can nurture your contacts and engage with them even after they leave your website. When you use Constant Contact + WPForms together, you can:"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:792
+#: includes/providers/class-constant-contact.php:809
 msgid "Seamlessly add new contacts to your email list"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:793
+#: includes/providers/class-constant-contact.php:810
 msgid "Create and send professional email newsletters"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:794
+#: includes/providers/class-constant-contact.php:811
 msgid "Get expert marketing and support"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:798
+#: includes/providers/class-constant-contact.php:815
 msgid "Try Constant Contact Today"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:802
+#: includes/providers/class-constant-contact.php:819
 msgid "WPForms Makes List Building Easy"
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:803
+#: includes/providers/class-constant-contact.php:820
 msgid "When creating WPForms, our goal was to make a WordPress forms plugin that&#39;s both EASY and POWERFUL."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:804
+#: includes/providers/class-constant-contact.php:821
 msgid "We made the form creation process extremely intuitive, so you can create a form to start capturing emails within 5 minutes or less."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:805
+#: includes/providers/class-constant-contact.php:822
 msgid "Here&#39;s how it works."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:809
+#: includes/providers/class-constant-contact.php:826
 msgid "1. Select from our pre-built templates, or create a form from scratch."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:813
+#: includes/providers/class-constant-contact.php:830
 msgid "2. Drag and drop any field you want onto your signup form."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:817
+#: includes/providers/class-constant-contact.php:834
 msgid "3. Connect your Constant Contact email list."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:821
+#: includes/providers/class-constant-contact.php:838
 msgid "4. Add your new form to any post, page, or sidebar."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:824
+#: includes/providers/class-constant-contact.php:841
 msgid "It doesn&#39;t matter what kind of business you run, what kind of website you have, or what industry you are in - you need to start building your email list today."
 msgstr ""
 
-#: includes/providers/class-constant-contact.php:825
+#: includes/providers/class-constant-contact.php:842
 msgid "With Constant Contact + WPForms, growing your list is easy."
 msgstr ""
 
@@ -5126,15 +5126,7 @@ msgstr ""
 msgid "Search Addons"
 msgstr ""
 
-#: lite/templates/admin/addons.php:22
-msgid "Form Addons are a PRO feature."
-msgstr ""
-
-#: lite/templates/admin/addons.php:23
-msgid "Please upgrade to the PRO plan to unlock them and more awesome features."
-msgstr ""
-
-#: lite/templates/admin/addons.php:37
+#: lite/templates/admin/addons.php:28
 msgid "Unknown Addon"
 msgstr ""
 
@@ -5328,51 +5320,51 @@ msgstr ""
 msgid "<strong>Bonus:</strong> WPForms Lite users get <span class=\"green\">50% off regular price</span>, automatically applied at checkout."
 msgstr ""
 
-#: lite/wpforms-lite.php:649
+#: lite/wpforms-lite.php:650
 msgid "View and Manage All Your Form Entries inside WordPress"
 msgstr ""
 
-#: lite/wpforms-lite.php:651
+#: lite/wpforms-lite.php:652
 msgid "Form entries are not stored in WPForms Lite."
 msgstr ""
 
-#: lite/wpforms-lite.php:652
+#: lite/wpforms-lite.php:653
 msgid "Once you upgrade to WPForms Pro, all future form entries will be stored in your WordPress database and displayed on this Entries screen."
 msgstr ""
 
-#: lite/wpforms-lite.php:656
+#: lite/wpforms-lite.php:657
 msgid "View Entries in Dashboard"
 msgstr ""
 
-#: lite/wpforms-lite.php:657
+#: lite/wpforms-lite.php:658
 msgid "Export Entries in a CSV File"
 msgstr ""
 
-#: lite/wpforms-lite.php:658
+#: lite/wpforms-lite.php:659
 msgid "Add Notes / Comments"
 msgstr ""
 
-#: lite/wpforms-lite.php:659
+#: lite/wpforms-lite.php:660
 msgid "Save Favorite Entries"
 msgstr ""
 
-#: lite/wpforms-lite.php:662
+#: lite/wpforms-lite.php:663
 msgid "Mark Read / Unread"
 msgstr ""
 
-#: lite/wpforms-lite.php:663
+#: lite/wpforms-lite.php:664
 msgid "Print Entries"
 msgstr ""
 
-#: lite/wpforms-lite.php:664
+#: lite/wpforms-lite.php:665
 msgid "Resend Notifications"
 msgstr ""
 
-#: lite/wpforms-lite.php:665
+#: lite/wpforms-lite.php:666
 msgid "See Geolocation Data"
 msgstr ""
 
-#: lite/wpforms-lite.php:671
+#: lite/wpforms-lite.php:672
 msgid "Upgrade to WPForms Pro Now"
 msgstr ""
 
@@ -6655,6 +6647,14 @@ msgstr ""
 msgid "Collect payments for product and service orders with this ready-made form template. You can add and remove fields as needed."
 msgstr ""
 
+#: src/Lite/Admin/Pages/Addons.php:98
+msgid "WPForms Addons is a PRO feature."
+msgstr ""
+
+#: src/Lite/Admin/Pages/Addons.php:99
+msgid "Please upgrade to the PRO plan to unlock them and more awesome features."
+msgstr ""
+
 #: src/Lite/Admin/Settings/Access.php:84
 msgid "Access"
 msgstr ""
@@ -6763,7 +6763,7 @@ msgstr ""
 
 #: src/Logger/ListTable.php:258
 #: src/Logger/ListTable.php:459
-#: src/SmartTags/SmartTags.php:108
+#: src/SmartTags/SmartTags.php:111
 msgid "Form ID"
 msgstr ""
 
@@ -6774,7 +6774,7 @@ msgstr ""
 
 #: src/Logger/ListTable.php:260
 #: src/Logger/ListTable.php:445
-#: src/SmartTags/SmartTags.php:113
+#: src/SmartTags/SmartTags.php:116
 msgid "Date"
 msgstr ""
 
@@ -6812,7 +6812,7 @@ msgid "Entry ID"
 msgstr ""
 
 #: src/Logger/ListTable.php:483
-#: src/SmartTags/SmartTags.php:116
+#: src/SmartTags/SmartTags.php:119
 msgid "User ID"
 msgstr ""
 
@@ -6904,100 +6904,100 @@ msgstr ""
 msgid "Missing required data in payload."
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:104
+#: src/SmartTags/SmartTags.php:107
 msgid "Site Administrator Email"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:105
+#: src/SmartTags/SmartTags.php:108
 msgid "Field ID"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:106
+#: src/SmartTags/SmartTags.php:109
 msgid "Field HTML ID"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:107
+#: src/SmartTags/SmartTags.php:110
 msgid "Field Value"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:110
+#: src/SmartTags/SmartTags.php:113
 msgid "Embedded Post/Page Title"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:111
+#: src/SmartTags/SmartTags.php:114
 msgid "Embedded Post/Page URL"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:112
+#: src/SmartTags/SmartTags.php:115
 msgid "Embedded Post/Page ID"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:114
+#: src/SmartTags/SmartTags.php:117
 msgid "Query String Variable"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:115
+#: src/SmartTags/SmartTags.php:118
 msgid "User IP Address"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:117
+#: src/SmartTags/SmartTags.php:120
 msgid "User Display Name"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:118
+#: src/SmartTags/SmartTags.php:121
 msgid "User Full Name"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:119
+#: src/SmartTags/SmartTags.php:122
 msgid "User First Name"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:120
+#: src/SmartTags/SmartTags.php:123
 msgid "User Last Name"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:121
+#: src/SmartTags/SmartTags.php:124
 msgid "User Email"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:122
+#: src/SmartTags/SmartTags.php:125
 msgid "User Meta"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:123
+#: src/SmartTags/SmartTags.php:126
 msgid "Author ID"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:124
+#: src/SmartTags/SmartTags.php:127
 msgid "Author Name"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:125
+#: src/SmartTags/SmartTags.php:128
 msgid "Author Email"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:126
+#: src/SmartTags/SmartTags.php:129
 msgid "Referrer URL"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:127
+#: src/SmartTags/SmartTags.php:130
 msgid "Login URL"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:128
+#: src/SmartTags/SmartTags.php:131
 msgid "Logout URL"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:129
+#: src/SmartTags/SmartTags.php:132
 msgid "Register URL"
 msgstr ""
 
-#: src/SmartTags/SmartTags.php:130
+#: src/SmartTags/SmartTags.php:133
 msgid "Lost Password URL"
 msgstr ""
 
 #: src/WPForms.php:126
-msgid "Property smart_tags was deprecated use wpforms()->get( 'smart_tags' ) instead of wpforms()->smart_tags"
+msgid "Property smart_tags was deprecated, use wpforms()->get( 'smart_tags' ) instead of wpforms()->smart_tags"
 msgstr ""
 
 #: templates/admin/challenge/builder.php:15

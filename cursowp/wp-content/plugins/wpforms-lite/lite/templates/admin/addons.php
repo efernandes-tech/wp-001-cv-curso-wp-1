@@ -18,15 +18,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php esc_html_e( 'WPForms Addons', 'wpforms-lite' ); ?>
 		<input type="search" placeholder="<?php esc_html_e( 'Search Addons', 'wpforms-lite' ); ?>" id="wpforms-admin-addons-search">
 	</h1>
-	<div class="notice notice-info" style="display: block;">
-		<p><strong><?php esc_html_e( 'Form Addons are a PRO feature.', 'wpforms-lite' ); ?></strong></p>
-		<p><?php esc_html_e( 'Please upgrade to the PRO plan to unlock them and more awesome features.', 'wpforms-lite' ); ?></p>
-		<p>
-			<a href="<?php echo esc_url( $upgrade_link ); ?>" class="wpforms-btn wpforms-btn-orange wpforms-btn-md wpforms-upgrade-modal" target="_blank" rel="noopener noreferrer">
-				<?php esc_html_e( 'Upgrade Now', 'wpforms-lite' ); ?>
-			</a>
-		</p>
-	</div>
 	<div class="wpforms-admin-content">
 		<div id="wpforms-admin-addons-list">
 			<div class="list">

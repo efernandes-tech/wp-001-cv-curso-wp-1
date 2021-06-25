@@ -53,6 +53,7 @@ class Addons {
 	public function hooks() {
 
 		add_action( 'admin_enqueue_scripts', [ $this, 'enqueues' ] );
+		add_action( 'admin_notices', [ $this, 'notices' ] );
 		add_action( 'wpforms_admin_page', [ $this, 'output' ] );
 	}
 
@@ -76,6 +77,33 @@ class Addons {
 			WPFORMS_PLUGIN_URL . 'assets/js/list.min.js',
 			[ 'jquery' ],
 			'1.5.0'
+		);
+	}
+
+	/**
+	 * Notices.
+	 *
+	 * @since 1.6.7.1
+	 */
+	public function notices() {
+
+		$notice = sprintf(
+			'<p><strong>%1$s</strong></p>
+             <p>%2$s</p>
+             <p>
+                 <a href="%3$s" class="wpforms-btn wpforms-btn-orange wpforms-btn-md" rel="noopener noreferrer">
+                     %4$s
+                 </a>
+             </p>',
+			esc_html__( 'WPForms Addons is a PRO feature.', 'wpforms-lite' ),
+			esc_html__( 'Please upgrade to the PRO plan to unlock them and more awesome features.', 'wpforms-lite' ),
+			esc_url( wpforms_admin_upgrade_link( 'addons' ) ),
+			esc_html__( 'Upgrade Now', 'wpforms-lite' )
+		);
+
+		\WPForms\Admin\Notice::info(
+			$notice,
+			[ 'autop' => false ]
 		);
 	}
 

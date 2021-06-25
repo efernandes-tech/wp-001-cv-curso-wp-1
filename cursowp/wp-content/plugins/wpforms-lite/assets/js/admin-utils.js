@@ -633,6 +633,10 @@ var wpf = {
 	 */
 	initTooltips: function() {
 
+		if ( typeof jQuery.fn.tooltipster === 'undefined' ) {
+			return;
+		}
+
 		jQuery( '.wpforms-help-tooltip' ).tooltipster( {
 			contentAsHTML: true,
 			position: 'right',

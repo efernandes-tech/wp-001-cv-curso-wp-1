@@ -530,7 +530,7 @@ class WPForms_Lite {
 		}
 		?>
 
-		<style type="text/css">
+		<style>
 			.wpforms-admin-content {
 				-webkit-filter: blur(3px);
 				-moz-filter: blur(3px);
@@ -629,6 +629,7 @@ class WPForms_Lite {
 				float: left;
 			}
 		</style>
+
 		<script type="text/javascript">
 			jQuery( function ( $ ) {
 				var userAgent = window.navigator.userAgent,
@@ -956,7 +957,7 @@ class WPForms_Lite {
 	}
 
 	/**
-	 * Notify user that addons are a pro feature.
+	 * Addons page.
 	 *
 	 * @since 1.0.0
 	 * @deprecated 1.6.7
@@ -964,6 +965,10 @@ class WPForms_Lite {
 	public function addons_page() {
 
 		_deprecated_function( __CLASS__ . '::' . __METHOD__, '1.6.7 of WPForms plugin', "wpforms()->get( 'addons_page' )->output()" );
+
+		if ( ! wpforms_is_admin_page( 'addons' ) ) {
+			return;
+		}
 
 		wpforms()->get( 'addons_page' )->output();
 	}

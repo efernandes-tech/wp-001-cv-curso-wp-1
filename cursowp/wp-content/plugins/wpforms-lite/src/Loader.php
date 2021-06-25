@@ -75,6 +75,10 @@ class Loader {
 		array_push(
 			$this->classes,
 			[
+				'name' => 'Admin\Notice',
+				'id'   => 'notice',
+			],
+			[
 				'name' => 'Admin\Addons\Addons',
 				'id'   => 'addons',
 			],

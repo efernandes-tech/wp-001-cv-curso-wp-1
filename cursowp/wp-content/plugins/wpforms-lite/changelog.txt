@@ -1,5 +1,14 @@
 == Changelog ==
 
+= 1.6.7.1 =
+- Changed: Improved logic of pasting a text in the fields with word and character limits.
+- Changed: Updated DOMPurify lib to 2.2.9.
+- Changed: Some admin notices can be dismissed on a per-user basis.
+- Fixed: Smart Tags don't parse dot and comma symbols well.
+- Fixed: In rare cases, WPForms functions calls are not handled correctly inside the third-party frontend AJAX calls.
+- Fixed: Incorrect `wpforms_smart_tag_process` filter deprecation notice.
+- Fixed: Compatibility with the Elementor 3.1.x, 3.2.x and 3.3.x.
+
 = 1.6.7 =
 - Changed: Email Summaries can now be tweaked via the hook to have multiple "To" recipients.
 - Changed: Email Summaries subject line is changed to reduce a chance of going into spam folder.

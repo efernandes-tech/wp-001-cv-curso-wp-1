@@ -64,3 +64,4 @@
         - Configurar container
         - Configurar cores e fundos
         - Configurar tipografia
+- Editar página "Home"

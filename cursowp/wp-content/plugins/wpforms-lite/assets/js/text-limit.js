@@ -142,6 +142,30 @@
 	}
 
 	/**
+	 * Paste event higher order function for characters limit.
+	 *
+	 * @since 1.6.7.1
+	 *
+	 * @param {number} limit Max allowed number of characters.
+	 *
+	 * @returns {Function} Event handler.
+	 */
+	function pasteText( limit ) {
+
+		return function( e ) {
+
+			e.preventDefault();
+
+			var pastedText = getPastedText( e ),
+				newPosition = this.selectionStart + pastedText.length,
+				newText = this.value.substring( 0, this.selectionStart ) + pastedText + this.value.substring( this.selectionStart );
+
+			this.value = newText.substring( 0, limit );
+			this.setSelectionRange( newPosition, newPosition );
+		};
+	}
+
+	/**
 	 * Paste event higher order function for words limit.
 	 *
 	 * @since 1.5.6
@@ -155,9 +179,16 @@
 		return function( e ) {
 
 			e.preventDefault();
-			var pastedText = getPastedText( e ).trim().split( /\s+/ );
-			pastedText.splice( limit, pastedText.length );
-			this.value = pastedText.join( ' ' );
+
+			var pastedText = getPastedText( e ),
+				newPosition = this.selectionStart + pastedText.length,
+				newText = this.value.substring( 0, this.selectionStart ) + pastedText + this.value.substring( this.selectionStart );
+
+			newText = newText.trim().split( /\s+/ );
+			newText.splice( limit, newText.length );
+
+			this.value = newText.join( ' ' );
+			this.setSelectionRange( newPosition, newPosition );
 		};
 	}
 
@@ -202,6 +233,7 @@
 
 					e.addEventListener( 'keydown', fn );
 					e.addEventListener( 'keyup', fn );
+					e.addEventListener( 'paste', pasteText( limit ) );
 				}
 			);
 
