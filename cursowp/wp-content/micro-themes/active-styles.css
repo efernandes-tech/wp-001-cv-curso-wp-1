@@ -1,0 +1,18 @@
+/*  MICROTHEMER STYLES  */
+
+
+/*= General =================== */
+
+/** General >> Titulo Cardapio Home **/
+.my-cardapio-home .uagb-rm__title-wrap {
+	width: 270px !important;
+}
+
+
+/*= Content =================== */
+
+/** Content >> Preco Cardapio Home **/
+.my-cardapio-home .uagb-rm__price {
+	width: 80px !important;
+}
+

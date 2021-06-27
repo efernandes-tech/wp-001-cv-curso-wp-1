@@ -1,5 +1,8 @@
 == Changelog ==
 
+= 1.6.7.2 =
+- Fixed: Admin notice option flag reference.
+
 = 1.6.7.1 =
 - Changed: Improved logic of pasting a text in the fields with word and character limits.
 - Changed: Updated DOMPurify lib to 2.2.9.

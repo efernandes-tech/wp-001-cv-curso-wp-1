@@ -79,6 +79,10 @@ class Migrations {
 		if ( version_compare( $version, '1.5.9', '<' ) ) {
 			$this->v159_upgrade();
 		}
+
+		if ( version_compare( $version, '1.6.7.2', '<' ) ) {
+			$this->v1672_upgrade();
+		}
 	}
 
 	/**
@@ -114,5 +118,30 @@ class Migrations {
 		}
 
 		$this->is_migrated = true;
+	}
+
+	/**
+	 * Do all the required migrations for WPForms v1.6.7.2.
+	 *
+	 * @since 1.6.7.2
+	 */
+	private function v1672_upgrade() {
+
+		$review = get_option( 'wpforms_review' );
+
+		if ( empty( $review ) ) {
+			return;
+		}
+
+		$notices = get_option( 'wpforms_admin_notices', [] );
+
+		if ( isset( $notices['review_request'] ) ) {
+			return;
+		}
+
+		$notices['review_request'] = $review;
+
+		update_option( 'wpforms_admin_notices', $notices, true );
+		delete_option( 'wpforms_review' );
 	}
 }
